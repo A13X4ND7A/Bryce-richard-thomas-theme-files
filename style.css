@@ -1,0 +1,318 @@
+/*
+ Theme Name:   Responsive-child
+ Description:  Tresponsive child theme
+ Author:       Alexandra Faller
+ Author URI:   http://alexfaller.uk
+ Template:     responsive
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ 
+*/
+
+/* =Start From Here
+-------------------------------------------------------------- */
+
+/************************************************************************ GENERAL************************************************************************/
+
+body{
+	
+	background: url('core/images/background.png') repeat;
+	color: #E0E0E0;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 12px;
+	
+}
+
+.skip-container{
+	
+	display: none;
+}
+
+p {
+	
+	margin:0;
+	padding: 0;
+	line-height: 1.5em;
+}
+
+.left{
+	float: left;
+
+}
+
+.right{
+	float: right;
+}
+
+#content {
+	
+	background: url('core/images/contentBg.png') repeat;
+	padding: 20px;
+	
+}
+
+a{
+	color: #F99E1C;
+}
+
+a:hover{
+	color: #E0E0E0;
+}
+
+th, td, table {
+  border: none;
+}
+
+p, hr, dl, pre, form, table, address, blockquote {
+  margin: 0;
+}
+
+th, td {
+  padding: 0;
+}
+
+form div {
+  margin-bottom: 0;
+}
+
+
+/************************************************************************ RESPONSIVE NAV ************************************************************************/
+@media screen and (max-width: 650px) {
+.paypalForm {
+	
+	clear: both;
+	}
+	
+	.js .main-nav #responsive_current_menu_item {
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+  padding: 5px 40px 5px 10px;
+  background: #F99E1C;
+}
+	
+	#bookBanner{
+		display: none;
+	}
+	
+#colLeft,#colRight, #colCenter{
+	max-width: 100%!important;
+	clear: both;
+
+	/* outline: 1px solid red; */
+}
+	
+	
+}
+
+
+
+
+/************************************************************************ HEADER************************************************************************/
+
+
+
+
+#logo {
+	
+	padding: 0;
+	max-width: 31%;
+  height: auto;
+}
+
+.menu {
+	background: none;
+}
+.main-nav {
+	background: none;
+	float: left;
+	clear: none;
+}
+
+#menu-top-menu{
+	float:left;
+	clear:none;
+	background: none;
+	margin: 40px 0 0 20px;
+}
+
+
+
+.menu a {
+	border-left: none;	
+	color: #F99E1C;
+	cursor: pointer;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+	text-shadow: none;
+	white-space: normal;
+	font-family: "Trebuchet MS","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: left;
+  font-variant: small-caps;
+  
+	
+}
+
+
+
+
+#menu-top-menu{
+	width: 300px;
+}
+
+#menu-top-menu li{
+	
+	float: none;
+	padding: 0 0 5px 0;
+}
+
+
+.current_page_item{
+
+color: #E0E0E0;
+	
+}
+
+.menu .current_page_item a, .menu .current-menu-item a{
+	background-color: transparent;
+	color: #fff;
+	
+	}
+ul.menu > li:hover {
+  background-color: transparent;
+  color: #E0E0E0;
+}
+
+.menu a:hover {
+  background-color: transparent;
+  background-image: none;
+  color: #E0E0E0;
+}
+
+
+
+
+
+
+/************************************************************************ MAIN************************************************************************/
+
+#featured{
+	background-image: url('core/images/banner.png');
+	background-repeat: no-repeat;
+	height: 294px;
+	background-color: transparent;
+}
+
+#wrapper{
+	background: none;
+	border: none;
+	}
+
+
+/************************************************************************ WIDGETS ************************************************************************/
+
+#colLeft,#colRight, #colCenter{
+	max-width: 30%;
+
+	/* outline: 1px solid red; */
+}
+
+#colLeft{
+	float:left;
+}
+
+#colRight{
+	float: right;
+	margin-left: 10px;
+}
+
+#colCenter{
+	float: left;
+	margin-left: 10px;
+}
+
+#bookBanner {
+	
+	float: right;
+}
+
+/************************************************************************ CONTACT FORM ************************************************************************/
+
+#cscf p{
+	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+/************************************************************************ FRONT PAGE STYLES************************************************************************/
+
+.upcomingSignings, .upcomingSignings tr td{
+	
+	border: none;
+	font-weight: 1em;
+}
+
+.widgettitle{
+	margin: 0;
+	font-size: 2.4em;
+	font-variant: small-caps;
+	font-family: "Trebuchet MS","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #F99E1C;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+.metaslider-176 {
+	border: 10px solid black;
+}
+
+/************************************************************************ TWIDGET************************************************************************/
+
+.twiget-feed a {
+  display: inline !important;
+  color: #F99E1C;
+}
+
+.twiget-feed a:hover{
+	
+	color: #E0E0E0;
+}
+
+/************************************************************************ FOOTER************************************************************************/
+
+#footer a {
+  color: #F99E1C;
+  font-weight: 400;
+}
+
+#footer a:hover {
+  color: #E0E0E0;
+  
+}
+
+/************************************************************************ PAYPAL************************************************************************/
+.paypalButton {
+	margin-top: 20px;
+}
+
+.paypalForm {
+	
+	
+
+	margin: 0px auto;
+}
+
